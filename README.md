@@ -39,5 +39,8 @@ Support
 
 support@bluefinengineering.com
     
-Contributors
+Collaborators Welcome!
 -------
+
+If you would like to contribute to this open-source project please let me know (support@bluefinengineering.com).  
+For example if you wish the service performed another operation on an image, please write the code and submit the update.
