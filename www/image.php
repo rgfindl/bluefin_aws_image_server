@@ -50,7 +50,7 @@ try {
 	// Validate the s3 path
 	//
 	validateS3Path($s3Path);
-	$s3 = "https://s3.amazonaws.com"+$s3Path;
+	$s3 = "https://s3.amazonaws.com".$s3Path;
 
 	//
 	// Make temp dir.

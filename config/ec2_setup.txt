@@ -34,5 +34,5 @@ service httpd start
 //
 cd ~
 wget https://github.com/rgfindl/bluefin_aws_image_server/archive/master.zip
-unzip master.zip
-cp ./www/* /var/www/.
+unzip master
+cp ./bluefin_aws_image_server-master/www/* ./bluefin_aws_image_server-master/www/.htaccess /var/www/html/.
