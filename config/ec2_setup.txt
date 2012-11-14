@@ -1,0 +1,38 @@
+//
+// Login as admin
+//
+sudo su -
+
+//
+// Update system
+//
+yum update
+
+//
+// Install software
+//
+yum install httpd php php-mysql php-xml php-pdo php-odbc php-soap php-common php-cli php-mbstring php-bcmath php-ldap php-imap php-gd ImageMagick
+
+//
+// *** Change apache config ***
+//
+// Under <Directory "/var/www/html"> change the following line
+//   OLD: AllowOverride None
+//   NEW: AllowOverride All
+//
+vi /etc/httpd/conf/httpd.conf
+
+
+//
+// Turn on apache
+//
+chkconfig httpd on
+service httpd start
+
+//
+// Install web application from https://github.com/rgfindl/bluefin_aws_image_server/archive/master.zip.
+//
+cd ~
+wget https://github.com/rgfindl/bluefin_aws_image_server/archive/master.zip
+unzip master.zip
+cp ./www/* /var/www/.
