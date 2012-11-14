@@ -36,3 +36,12 @@ cd ~
 wget https://github.com/rgfindl/bluefin_aws_image_server/archive/master.zip
 unzip master
 cp ./bluefin_aws_image_server-master/www/* ./bluefin_aws_image_server-master/www/.htaccess /var/www/html/.
+
+//
+// Add allowed S3 paths to valid-s3-paths.ini.
+//
+vi /var/www/html/valid-s3-paths.ini
+
+//
+// Your done!
+//
