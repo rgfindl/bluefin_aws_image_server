@@ -12,7 +12,7 @@ Parameters
 -------
 
 <ul>
-<li>s3path (required, valid paths defined in <a href="www/valid-s3-paths.ini">valid-s3-paths.ini</a>)</li>
+<li>s3path (required, valid paths defined in <a href="bluefin_aws_image_server/www/valid-s3-paths.ini">valid-s3-paths.ini</a>)</li>
 <li>size (default=200)</li>
 <li>square (true | false, default=false)</li>
 </ul>
