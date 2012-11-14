@@ -5,8 +5,6 @@ Open Source on-the-fly image server.  Resize your [S3](http://aws.amazon.com/s3/
 
 After uploading your full size image to [S3](http://aws.amazon.com/s3/) you can request a resized image to place on your page.
 
-Ex.  User uploads their profile picture.  Display a small square profile picture next to their name.  
-When a user clicks on the profile picture the large image is displayed.
 
 Parameters
 -------
@@ -26,6 +24,12 @@ Example URLs
     
 Setup
 -------
+
+### What you need
+<ul>
+<li>[S3](http://aws.amazon.com/s3/) bucket with <strong>* public *</strong> images</li>
+<li>[EC2](http://aws.amazon.com/ec2/) server (or [auto scaling](http://aws.amazon.com/autoscaling/) group)
+
 
 Amazon AMI
 -------
