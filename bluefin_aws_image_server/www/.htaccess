@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^images/(.*)$ image.php [NC,QSA,L]
