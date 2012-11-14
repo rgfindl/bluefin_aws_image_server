@@ -23,6 +23,9 @@ Example URLs
     http://domain.com/images/test-image.jpg?s3path=/bluefin_aws_image_server/&size=400&square=true
 
     http://domain.com/images/test-image.jpg?s3path=/bluefin_aws_image_server/&size=400
+    
+Setup
+-------
 
 Amazon AMI
 -------
@@ -30,3 +33,11 @@ Amazon AMI
 AMI ID: ami-1a75f173
 
 AMI Name: bluefin_aws_image_server
+    
+Support
+-------
+
+support@bluefinengineering.com
+    
+Contributors
+-------
