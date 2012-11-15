@@ -28,8 +28,8 @@ Setup
 ### What you need
 + [S3](http://aws.amazon.com/s3/) bucket with <strong>* public *</strong> images
 + [EC2](http://aws.amazon.com/ec2/) server (or [auto scaling](http://aws.amazon.com/autoscaling/) group)
-++ You can use the following EC2 AMI: ami-1a75f173
-++ You could use you own server.  See the server configuration. <a href="bluefin_aws_image_server/blob/master/config/ec2_config.txt">ec2_config.txt</a>
+ + You can use the following EC2 AMI: ami-1a75f173
+ + You could use you own server.  See the server configuration. <a href="bluefin_aws_image_server/blob/master/config/ec2_config.txt">ec2_config.txt</a>
 + [CloudFront](http://aws.amazon.com/cloudfront/) to cach your images (Forwarded Query Strings)
 
 
