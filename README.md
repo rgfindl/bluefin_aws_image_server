@@ -26,15 +26,11 @@ Setup
 -------
 
 ### What you need
-<ul>
-<li>[S3](http://aws.amazon.com/s3/) bucket with <strong>* public *</strong> images</li>
-<li>[EC2](http://aws.amazon.com/ec2/) server (or [auto scaling](http://aws.amazon.com/autoscaling/) group)
- <ul>
- <li>You can use the following EC2 AMI: ami-1a75f173</li>
- <li>You could use you own server.  See the server configuration. <a href="bluefin_aws_image_server/blob/master/config/ec2_config.txt">ec2_config.txt</a></li>
- </ul>
-</li>
-</ul>
++ [S3](http://aws.amazon.com/s3/) bucket with <strong>* public *</strong> images
++ [EC2](http://aws.amazon.com/ec2/) server (or [auto scaling](http://aws.amazon.com/autoscaling/) group)
+++ You can use the following EC2 AMI: ami-1a75f173
+++ You could use you own server.  See the server configuration. <a href="bluefin_aws_image_server/blob/master/config/ec2_config.txt">ec2_config.txt</a>
+
 
 
 ### Valid S3 Paths
