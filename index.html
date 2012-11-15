@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Bluefin AWS Image Server - Open Source : On-the-fly image server (S3, EC2, ImageMagick, CloudFront)" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bluefin AWS Image Server - Open Source</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rgfindl/bluefin_aws_image_server">View on GitHub</a>
+
+          <h1 id="project_title">Bluefin AWS Image Server - Open Source</h1>
+          <h2 id="project_tagline">On-the-fly image server (S3, EC2, ImageMagick, CloudFront)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rgfindl/bluefin_aws_image_server/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rgfindl/bluefin_aws_image_server/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Bluefin AWS Image Server</h1>
+
+<p>Open Source on-the-fly image server.  Resize your <a href="http://aws.amazon.com/s3/">S3</a> images on the fly using <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a>, then cache them using <a href="http://aws.amazon.com/cloudfront/">CloudFront</a>.</p>
+
+<p>After uploading your full size image to <a href="http://aws.amazon.com/s3/">S3</a> you can request a resized image to place on your page.</p>
+
+<h2>Parameters</h2>
+
+<ul>
+<li>s3path (required, valid paths defined in <a href="bluefin_aws_image_server/blob/master/www/valid-s3-paths.ini">valid-s3-paths.ini</a>)</li>
+<li>size (default=200)</li>
+<li>square (true | false, default=false)</li>
+</ul><h2>Example URLs</h2>
+
+<pre><code>http://domain.com/images/test-image.jpg?s3path=/bluefin_aws_image_server/&amp;size=400&amp;square=true
+
+http://domain.com/images/test-image.jpg?s3path=/bluefin_aws_image_server/&amp;size=400
+</code></pre>
+
+<h2>Setup</h2>
+
+<h3>What you need</h3>
+
+<ul>
+<li>
+<a href="http://aws.amazon.com/s3/">S3</a> bucket with <strong>* public *</strong> images</li>
+<li>
+<a href="http://aws.amazon.com/ec2/">EC2</a> server (or <a href="http://aws.amazon.com/autoscaling/">auto scaling</a> group)
+
+<ul>
+<li>You can use the following EC2 AMI: ami-1a75f173</li>
+<li>You could use you own server.  See the server configuration. <a href="bluefin_aws_image_server/blob/master/config/ec2_config.txt">ec2_config.txt</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://aws.amazon.com/cloudfront/">CloudFront</a> to cache your images (Forwarded Query Strings)</li>
+</ul><h3>Valid S3 Paths</h3>
+
+<p>Configure the <a href="bluefin_aws_image_server/blob/master/www/valid-s3-paths.ini">valid-s3-paths.ini</a> so that only your images can be accessed.   </p>
+
+<h2>Amazon AMI</h2>
+
+<p>AMI ID: ami-1a75f173</p>
+
+<p>AMI Name: bluefin_aws_image_server</p>
+
+<h2>Support</h2>
+
+<p><a href="mailto:support@bluefinengineering.com">support@bluefinengineering.com</a></p>
+
+<p><a href="http://bluefinengineering.com/">http://bluefinengineering.com/</a></p>
+
+<h2>Collaborators Welcome!</h2>
+
+<p>If you would like to contribute to this open-source project please let me know (<a href="mailto:support@bluefinengineering.com">support@bluefinengineering.com</a>).<br>
+For example if you wish the service performed another operation on an image, please write the code and submit the update.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Bluefin AWS Image Server - Open Source maintained by <a href="https://github.com/rgfindl">rgfindl</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
