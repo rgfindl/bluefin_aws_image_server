@@ -1,7 +1,7 @@
 Bluefin AWS Image Server
 =============
 
-Open Source on-the-fly image server.  Resize your [S3](http://aws.amazon.com/s3/) images on the fly, then cache them using [CloudFront](http://aws.amazon.com/cloudfront/).
+Open Source on-the-fly image server.  Resize your [S3](http://aws.amazon.com/s3/) images on the fly using [ImageMagick](http://www.imagemagick.org/script/index.php), then cache them using [CloudFront](http://aws.amazon.com/cloudfront/).
 
 After uploading your full size image to [S3](http://aws.amazon.com/s3/) you can request a resized image to place on your page.
 
@@ -29,7 +29,17 @@ Setup
 <ul>
 <li>[S3](http://aws.amazon.com/s3/) bucket with <strong>* public *</strong> images</li>
 <li>[EC2](http://aws.amazon.com/ec2/) server (or [auto scaling](http://aws.amazon.com/autoscaling/) group)
+ <ul>
+ <li>You can use the following EC2 AMI: ami-1a75f173</li>
+ <li>You could use you own server.  See the server configuration. <a href="bluefin_aws_image_server/blob/master/config/ec2_config.txt">ec2_config.txt</a></li>
+ </ul>
+</li>
+</ul>
 
+
+### Valid S3 Paths
+
+Configure the <a href="bluefin_aws_image_server/blob/master/www/valid-s3-paths.ini">valid-s3-paths.ini</a> so that only your images can be accessed.   
 
 Amazon AMI
 -------
@@ -42,6 +52,8 @@ Support
 -------
 
 support@bluefinengineering.com
+
+http://bluefinengineering.com/
     
 Collaborators Welcome!
 -------
